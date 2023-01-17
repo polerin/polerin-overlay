@@ -46,4 +46,4 @@ module.exports.resolve = {
     }
 };
 
-module.exports.optimization = { usedExports : true };
+module.exports.optimization = { };
