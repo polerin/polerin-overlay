@@ -1,4 +1,5 @@
 const path = require('path');
+const resolve = require('enhanced-resolve');
 
 module.exports = {
   entry: {
@@ -13,7 +14,11 @@ module.exports = {
   }, 
   output: {
     path: path.resolve(__dirname, 'public/assets/js'),
-  }
+  },
+  resolve: {
+    importsFields: ['browser', 'module', 'main']
+  },
+  devtool: "inline-source-map"
 };
 
 // module.exports.stats = { errorDetails: true };
@@ -46,4 +51,6 @@ module.exports.resolve = {
     }
 };
 
-module.exports.optimization = { };
+module.exports.optimization = {
+  usedExports: true
+};

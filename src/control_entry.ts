@@ -1,5 +1,5 @@
 import { appControlContainer } from "./Bindings/AppControlBindings";
-import { initCentral } from "obs-tau-blend";
+import { initCentral } from "obs-tau-blend/Entry/Central";
 
-console.log("woaaaah");
-initCentral(appControlContainer);
+
+initCentral(appControlContainer, '/config.json');
