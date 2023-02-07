@@ -2,10 +2,10 @@ import {
   centralContainer,
   CentralController,
   CENTRAL_TOKENS,
-  Container,
-  injected,
   SHARED_TOKENS,
-} from "obs-tau-blend";
+} from "obs-tau-blend/Entry/Central";
+
+import { injected, Container } from 'brandi';
 
 injected(
   CentralController,

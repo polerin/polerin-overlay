@@ -15,9 +15,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public/assets/js'),
   },
-  resolve: {
-    importsFields: ['browser', 'module', 'main']
-  },
   devtool: "inline-source-map"
 };
 
@@ -35,7 +32,8 @@ module.exports.module = {
 
 module.exports.resolve = {
     modules: ['src', 'node_modules'],
-    extensions: ['.tsx', '.ts', '.js'],
+    importsFields: ['imports'],
+    extensions: ['.ts', '.js'],
     // exclude : ['*.test.ts'],
     fallback: {
       // "stream": require.resolve("stream-browserify"),
