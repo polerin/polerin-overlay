@@ -1,0 +1,15 @@
+{
+    "adapters": {
+        "tau": {
+            "socketProtocol": "wss://",
+            "socketHost": "your tau host here",
+            "socketPort": 443,
+            "tauSecret": "your tau secret here"
+        },
+        "obs": {
+            "socketPassword": "obs password here",
+            "socketPort": 4455,
+            "socketHost": "localhost"
+        }
+    }
+}
